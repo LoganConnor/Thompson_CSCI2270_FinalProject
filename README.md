@@ -28,7 +28,7 @@ Emma Montross, Logan Thompson
 
 Contributers: 
 
-christyroney
+christyroney, schubydoo
 
 Open Issues/Bugs:
 
