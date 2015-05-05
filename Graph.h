@@ -57,6 +57,7 @@ class Graph
     private:
         std::vector<vertex> vertices;
         int batteryRange;
+        bool printed;
         std::vector<vertex> path; //to keep track of shortest distance path without having to print it out
                                     //in case the car cannot make it - need something to check for charging stations
 

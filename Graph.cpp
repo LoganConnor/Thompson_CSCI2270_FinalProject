@@ -208,7 +208,8 @@ Post-conditions: All cities from start to end, as well as a count of encountered
 void Graph::findShortestPath(string v1, string v2){
     int i1 = -1;
     int i2 = -1;
-
+    printed = true;
+    
     queue<queueVertex> vQueue;      //Queue will hold cities as they are encountered
     vector<vertex*> path;
     queueVertex temp;
@@ -227,6 +228,7 @@ void Graph::findShortestPath(string v1, string v2){
 
     if(i1 == -1 || i2 == -1){
         cout<<"One or more cities doesn't exist"<<endl;
+        printed = false;
         return;
     }
 
@@ -302,7 +304,8 @@ void Graph::findShortestDistance(string v1, string v2){
     }
 
     if(i1 == -1 || i2 == -1){
-        cout<<"One or more cities doesn't exist"<<endl;
+        if (printed == true)
+            cout<<"One or more cities doesn't exist"<<endl;
         return;
     }
 
